@@ -6,7 +6,7 @@
     "dev": "webpack --watch --mode=production",
     "prepublish": "rm -r dist",
     "publish": "webpack --mode=production",
-    "postpublish": "cp manifest.json dist/manifest.json"
+    "postpublish": "cp {manifest.json,organizze-icon32.png} dist/"
   },
   "keywords": [],
   "author": "Guilherme Luchesi",
