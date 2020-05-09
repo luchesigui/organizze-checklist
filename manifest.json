@@ -14,7 +14,7 @@
     "scripts": ["background.js"]
   },
   "browser_action": {
-
+    "default_icon": "organizze-icon32.png"
   },
   "manifest_version": 2
 }
