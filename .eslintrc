@@ -1,0 +1,11 @@
+{
+  "extends" : [
+    "@spotify/eslint-config-base"
+  ],
+  "env": {
+    "webextensions": true,
+  },
+  "rules": {
+    "no-console": "off",
+  }
+}
