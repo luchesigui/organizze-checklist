@@ -4,4 +4,3 @@ chrome
   .runtime
   .onMessage
   .addListener(buttonPressed);
-
