@@ -13,12 +13,25 @@ const getRowContent = (row) => {
     .filter(filterCheckbox);
 };
 
+const isActive = (el) =>
+  el.getAttribute('checked');
+
+const toggleRow = (el) => {
+  if (isActive(el)) {
+    el.removeAttribute('checked');
+  } else {
+    el.setAttribute('checked', true);
+  }
+};
+
 const handleTableClick = ({ target }) => {
   if (target.getAttribute('type') !== 'checkbox') {
     return null;
   }
 
   const row = target.parentElement;
+
+  toggleRow(row);
   return getRowContent(row)
     .map(paintElement);
 };
