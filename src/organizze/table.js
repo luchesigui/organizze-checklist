@@ -1,7 +1,7 @@
 const { filterCheckbox } = require('./checkbox');
 
-const paintElement = el => {
-  el.style = 'background-color: #f5f5f5 !important;';
+const paintElement = (el, color) => {
+  el.style = `background-color: ${color} !important;`;
   return el;
 };
 
@@ -30,10 +30,11 @@ const handleTableClick = ({ target }) => {
   }
 
   const row = target.parentElement;
+  const color = isActive(row) ? '#fff' : '#f5f5f5';
 
   toggleRow(row);
   return getRowContent(row)
-    .map(paintElement);
+    .map((rowContent) => paintElement(rowContent, color));
 };
 
 module.exports = {
