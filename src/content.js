@@ -1,4 +1,8 @@
-const { buttonPressed, reduceCreditFromBalance } = require('./organizze');
+const {
+  buttonPressed,
+  reduceCreditFromBalance,
+  addWatcherToAddTransaction,
+} = require('./organizze');
 
 chrome
   .runtime
@@ -9,3 +13,5 @@ chrome
   .runtime
   .onMessage
   .addListener(reduceCreditFromBalance);
+
+addWatcherToAddTransaction();
