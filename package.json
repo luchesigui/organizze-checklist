@@ -1,6 +1,6 @@
 {
   "name": "organizze-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cria um checkbox ao lado de cada item em uma lista lançamentos do Organizze e desconta o valor da fatura do saldo geral",
   "scripts": {
     "dev": "webpack --watch --mode=production",

@@ -1,12 +1,10 @@
 {
   "name": "Organizzer List Ticker",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Cria um checkbox ao lado de cada item em uma lista lançamentos do Organizze",
   "content_scripts": [
     {
-      "matches": [
-        "https://app.organizze.com.br/*"
-      ],
+      "matches": ["https://app.organizze.com.br/*"],
       "js": ["content.js"]
     }
   ],
