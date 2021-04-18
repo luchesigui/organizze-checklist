@@ -6,7 +6,8 @@
     "dev": "webpack --watch --mode=production",
     "prepublish": "rm -r dist",
     "publish": "webpack --mode=production",
-    "postpublish": "cp {manifest.json,organizze-icon32.png} dist/"
+    "postpublish": "cp {manifest.json,organizze-icon32.png} dist/",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Guilherme Luchesi",
@@ -18,6 +19,7 @@
     "babel-loader": "^8.1.0",
     "eslint": "^7.0.0",
     "eslint-loader": "^4.0.2",
+    "jest": "^26.6.3",
     "path": "^0.12.7",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
