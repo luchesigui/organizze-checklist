@@ -1,6 +1,6 @@
 const { addCheckBox } = require('./checkbox');
 const { handleTableClick } = require('./table');
-const openAddTransactionModal = require('./add-transacion');
+const openAddTransactionModal = require('./add-transaction');
 
 const {
   currencyNumberToString,
