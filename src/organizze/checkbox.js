@@ -14,7 +14,7 @@ const createCheckbox = (row) => {
   };
 };
 
-const preprendCheckbox = ({ row, checkbox }) => {
+const prependCheckbox = ({ row, checkbox }) => {
   row.prepend(checkbox);
   return row;
 };
@@ -22,7 +22,7 @@ const preprendCheckbox = ({ row, checkbox }) => {
 const addCheckBox = (columnRows) => Array
   .from(columnRows)
   .map(createCheckbox)
-  .map(preprendCheckbox);
+  .map(prependCheckbox);
 
 const filterCheckbox = el =>
   el.getAttribute('type') !== 'checkbox';
