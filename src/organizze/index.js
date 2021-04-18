@@ -1,5 +1,6 @@
 const { addCheckBox } = require('./checkbox');
 const { handleTableClick } = require('./table');
+const openAddTransactionModal = require('./add-transacion');
 
 const {
   currencyNumberToString,
@@ -33,7 +34,12 @@ const reduceCreditFromBalance = () => {
   balanceElement.innerHTML = newBalance;
 };
 
+const addWatcherToAddTransaction = () => {
+  document.addEventListener('keypress', openAddTransactionModal);
+};
+
 module.exports = {
   buttonPressed,
   reduceCreditFromBalance,
+  addWatcherToAddTransaction,
 };
